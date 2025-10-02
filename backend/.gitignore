@@ -61,6 +61,13 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
+# Fichiers statiques et media
+staticfiles/
+media/
+
+# Secrets de production
+.env
+
 # Flask stuff:
 instance/
 .webassets-cache

@@ -1,8 +1,9 @@
-from django.urls import path, include
+from django.urls import path,include
+from .views import LogsViewSet
 from rest_framework.routers import DefaultRouter
-from .views import *
-
 
 router = DefaultRouter()
-
-
+router.register(r'logs', LogsViewSet)
+urlpatterns = [
+    path('', include(router.urls)),
+]
